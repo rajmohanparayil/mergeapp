@@ -20,4 +20,9 @@ public class MergeController {
 		Message messageObj = new Message("release1 - "+message);
 		return messageObj;
 	}
+
+	public Message release_one_inprogress_helloWorld(@RequestParam(value = "message", defaultValue = "release1-inprogress") String message) {
+		Message messageObj = new Message("release1-inprogress - "+message);
+		return messageObj;
+	}
 }
