@@ -14,4 +14,10 @@ public class MergeController {
 		Message messageObj = new Message(message);
 		return messageObj;
 	}
+
+	@GetMapping("/message/release1")
+	public Message release_one_helloWorld(@RequestParam(value = "message", defaultValue = "release1") String message) {
+		Message messageObj = new Message("release1 - "+message);
+		return messageObj;
+	}
 }
