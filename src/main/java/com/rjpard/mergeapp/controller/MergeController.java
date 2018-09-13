@@ -22,8 +22,10 @@ public class MergeController {
 	@GetMapping("/team")
 	public List<Team> teams() {
 		Team team = new Team("Real Madrid");
+		Team team2 = new Team("Barcelona");
 		List<Team> teams = new ArrayList<Team>();
 		teams.add(team);
+		teams.add(team2);
 		return teams;
 	}
 }
