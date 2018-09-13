@@ -28,4 +28,10 @@ public class MergeController {
 		teams.add(team2);
 		return teams;
 	}
+
+	@GetMapping("/hotfix")
+	public Message helloWorld() {
+		Message messageObj = new Message("hotfix");
+		return messageObj;
+	}
 }
